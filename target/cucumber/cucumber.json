@@ -1,0 +1,158 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "BMI Calculator Launching",
+        "description": "",
+        "id": "calculate-bmi;bmi-calculator-launching",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7901435100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Calculator url is launched",
+            "match": {
+              "location": "CalculateBMISteps.calculator_url_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 783086200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on BMI calculator",
+            "match": {
+              "location": "CalculateBMISteps.user_clicks_on_BMI_calculator()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 46807900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "BMI calculator page is loaded",
+            "match": {
+              "location": "CalculateBMISteps.bmi_calculator_page_is_loaded()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "BMI calculation of 5 persons",
+        "description": "",
+        "id": "calculate-bmi;bmi-calculation-of-5-persons",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10657000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "BMI calculator is launched",
+            "match": {
+              "location": "CalculateBMISteps.bmi_calculator_is_launched()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12665698300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter below details and calculate BMI",
+            "match": {
+              "location": "CalculateBMISteps.user_enter_below_details_and_calculate_BMI(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "10",
+                  "127",
+                  "40"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "30",
+                  "156",
+                  "70"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "25",
+                  "152",
+                  "55"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "20",
+                  "160",
+                  "45"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "35",
+                  "160",
+                  "70"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4740008800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user exits the application",
+            "match": {
+              "location": "CalculateBMISteps.user_exits_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Calculate BMI",
+    "description": "Calculate BMI of multiple persons",
+    "id": "calculate-bmi",
+    "keyword": "Feature",
+    "uri": "CalculateBMI.feature"
+  }
+]
